@@ -6,7 +6,6 @@ A simple iOS app built with **Swift** and **SwiftUI** that fetches real-time air
 
 - **Programming Language**: Swift  
 - **Framework**: UIKit  
-- **Networking**: URLSession  
 - **API**: [AirVisual API](https://www.iqair.com/air-quality-api)  
 - **User Interface**: Storyboard + UIKit  
 

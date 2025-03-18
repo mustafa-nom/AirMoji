@@ -2,8 +2,6 @@
 
 A simple iOS app built with **Swift** and **SwiftUI** that fetches real-time air quality data and displays an appropriate image based on the AQI (Air Quality Index). This project demonstrates API integration, JSON parsing, and UI updates in an iOS application.
 
----
-
 ## **Tech Stack**
 
 - **Programming Language**: Swift  
@@ -12,16 +10,12 @@ A simple iOS app built with **Swift** and **SwiftUI** that fetches real-time air
 - **API**: [AirVisual API](https://www.iqair.com/air-quality-api)  
 - **User Interface**: Storyboard + UIKit  
 
----
-
 ## **Features**
 
 - **Real-Time Air Quality Fetching**: Retrieves AQI data for Los Angeles, California.  
 - **Dynamic Image Updates**: Displays a different emoji based on AQI level.  
 - **JSON Parsing**: Extracts relevant pollution data from the API response.  
 - **Asynchronous Networking**: Uses URLSession to handle API calls efficiently.  
-
----
 
 ## **How It Works**
 
@@ -53,7 +47,7 @@ let task = URLSession.shared.dataTask(with: url) { data, response, error in
 task.resume()
 ```
 
-### **API Request**
+### **AQI Image Mapping**
 The API response is parsed to extract the AQI (Air Quality Index) and based on the AQI value, the app updates the UI with a corresponding image:  
    - **Good Air Quality (AQI ≤ 50)** → Happy face  
    - **Moderate Air Quality (AQI ≤ 100)** → Neutral face  
@@ -67,10 +61,8 @@ The API response is parsed to extract the AQI (Air Quality Index) and based on t
    git clone https://github.com/yourusername/AirQualityApp.git
    ```
 2. Open the project in Xcode.  
-3. Replace `YOUR_API_KEY` with your [AirVisual API key](https://www.iqair.com/air-quality-api).  
+3. Replace my API key with your [AirVisual API key](https://www.iqair.com/air-quality-api).  
 4. Run the app on a simulator or a real device.  
-
----
 
 ## **Key Files**
 
@@ -79,5 +71,3 @@ The API response is parsed to extract the AQI (Air Quality Index) and based on t
 | `ViewController.swift` | Handles the UI and updates the AQI display.          |
 | `NetworkManager.swift` | Manages API requests and JSON parsing.               |
 | `AirQualityModel.swift` | Defines the data structure for AQI information.     |
-
----
